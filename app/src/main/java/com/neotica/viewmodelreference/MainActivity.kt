@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //Step 9: Define the viewModel
+        //Step 9: Link the viewModel to Activity
         //call viewModelProvider with this Activity as the owner,
         //and get from MainViewModel class.
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
